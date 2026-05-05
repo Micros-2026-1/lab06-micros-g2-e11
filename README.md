@@ -28,3 +28,4 @@ CODIGO PYTHON
 <img width="1600" height="840" alt="image" src="https://github.com/user-attachments/assets/afe683f8-56e8-4cc8-8b04-e517af2e9a10" />
 
 ## Evidencias de implementación
+[parte dos](https://youtu.be/gFHOwWI7sXg?si=kx4-zpO95poqRgmp)
