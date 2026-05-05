@@ -11,7 +11,7 @@
 ## Documentación
 [PICK18F45K22] (https://www.alldatasheet.com/datasheet-pdf/download/348759/MICROCHIP/PIC18F45K22.html)
 
- ## Marco teoriuco 
+ ## Marco teorico 
 
 En este laboratorio exploramos cómo lograr que un microcontrolador y una computadora se comuniquen en tiempo real utilizando una conexión serial. Para que ambos se entiendan, deben "hablar el mismo idioma" a través del cable. Como el microcontrolador no puede enviar valores matemáticos directos, primero debe traducir sus mediciones numéricas (como un voltaje) a texto simple. Luego, envía este mensaje hacia la computadora por una "puerta" virtual o puerto, el cual es muy estricto y solo permite que un programa escuche a la vez. Cuando el texto llega con el formato exacto que configuramos —incluyendo las palabras clave y los saltos de línea correctos—, nuestro programa en Python puede leerlo de inmediato. Finalmente, Python toma esos mensajes, extrae los números y los transforma al instante en una gráfica visual, permitiéndonos ver el comportamiento del circuito de forma clara y dinámica.
 
