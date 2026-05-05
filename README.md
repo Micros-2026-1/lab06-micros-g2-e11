@@ -15,6 +15,16 @@
 
 En este laboratorio exploramos cómo lograr que un microcontrolador y una computadora se comuniquen en tiempo real utilizando una conexión serial. Para que ambos se entiendan, deben "hablar el mismo idioma" a través del cable. Como el microcontrolador no puede enviar valores matemáticos directos, primero debe traducir sus mediciones numéricas (como un voltaje) a texto simple. Luego, envía este mensaje hacia la computadora por una "puerta" virtual o puerto, el cual es muy estricto y solo permite que un programa escuche a la vez. Cuando el texto llega con el formato exacto que configuramos —incluyendo las palabras clave y los saltos de línea correctos—, nuestro programa en Python puede leerlo de inmediato. Finalmente, Python toma esos mensajes, extrae los números y los transforma al instante en una gráfica visual, permitiéndonos ver el comportamiento del circuito de forma clara y dinámica.
 
+## Objetivos
+
+1. Configure el módulo UART en un microcontrolador PICpara permitir la comunicación serial.
+
+2. Transmitir datos a través del UART desde el PIC hacia un terminal serial conectado a través de USB-UART.
+
+3. Implementar funciones de transmisión y recepción de datos a través de UART .
+
+4. Visualizar los datos recibidos en el terminal y comprender el proceso de transmisión asíncrona.
+
 ## Procedimiento 
 
 El procedimiento de este proyecto se realizó paso a paso para asegurar el éxito de la comunicación. Primero, hicimos una prueba básica de conexión para confirmar que los cables estuvieran bien puestos y que la computadora pudiera "escuchar" a nuestra tarjeta electrónica, algo así como hacer una prueba de micrófono antes de un evento. Le dimos a la tarjeta la instrucción de enviar un simple mensaje de texto diciendo "Hola" repetidamente, y al ver este saludo claramente en una pantalla de monitoreo, comprobamos que la carretera de información estaba abierta. Una vez superada esta etapa, pasamos al objetivo principal: lograr que la computadora dibujara una gráfica en vivo. Para esto, cambiamos las instrucciones de la tarjeta para que borrara el saludo y empezara a enviar números de forma continua, simulando ser un sensor. Como el programa de la computadora es muy estricto para leer datos, tuvimos que empacar estos números usando un formato exacto: escribimos la palabra "Voltaje:" antes de cada número y le pusimos un salto de línea al final, como si apretáramos la tecla "Enter". De esta manera, al abrir nuestro programa de dibujo, este pudo reconocer la frase secreta, atrapar cada número que llegaba y dibujar rápidamente puntitos en la pantalla que, al unirse, le dieron vida a nuestra gráfica en movimiento.
